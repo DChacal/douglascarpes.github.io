@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('description.txt');
             const text = await response.text();
             const [title, description, tags] = text.split('---').map(line => line.trim());
-            document.getElementById('project-title').textContent = title;
+            document.getElementById('article-title').textContent = title;
             document.title = title; // Set the document title as well
 
-            const descriptionContainer = document.getElementById('project-description');
+            const descriptionContainer = document.getElementById('article-description');
             if (description.length > 420) {
                 const shortDescription = description.substring(0, 420);
                 descriptionContainer.innerHTML = `${shortDescription}<span id="ellipsis">...</span><span id="full-description" style="display: none;">${description.substring(420)}</span><br><span id="toggle-description">Read More</span>`;
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             renderTags(tags);
         } catch (error) {
-            console.error('Error loading project description:', error);
+            console.error('Error loading article description:', error);
         }
     };
 
     const renderTags = (tags) => {
-        const tagsContainer = document.getElementById('project-tags');
+        const tagsContainer = document.getElementById('article-tags');
         tags.split(',').map(tag => tag.trim()).forEach(tag => {
             const tagElement = document.createElement('div');
             tagElement.className = 'software-tag';
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('media.txt');
             const text = await response.text();
-            const mediaContainer = document.getElementById('project-media');
+            const mediaContainer = document.getElementById('article-media');
             const lines = text.split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#'));
 
             const fragment = document.createDocumentFragment();
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             mediaContainer.appendChild(fragment);
         } catch (error) {
-            console.error('Error loading project media:', error);
+            console.error('Error loading article media:', error);
         }
     };
 
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('stats.txt');
             const text = await response.text();
             const lines = text.split('\n').map(line => line.trim()).filter(line => line);
-            const statsContainer = document.getElementById('project-stats');
+            const statsContainer = document.getElementById('Article-stats');
             const iconMap = {
                 'Triangles': 'change_history',
                 'Materials': 'texture',
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         } catch (error) {
-            console.error('Error loading project stats:', error);
+            console.error('Error loading article stats:', error);
         }
     };
 
@@ -336,22 +336,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const navigateArticles = async (direction) => {
-        const currentProject = window.location.pathname.split('/').slice(-2, -1)[0];
-        const currentIndex = articles.indexOf(currentProject);
+        const currentArticle = window.location.pathname.split('/').slice(-2, -1)[0];
+        const currentIndex = articles.indexOf(currentArticle);
 
         if (currentIndex !== -1) {
             let newIndex = currentIndex + direction;
             if (newIndex < 0) newIndex = articles.length - 1;
             if (newIndex >= articles.length) newIndex = 0;
 
-            const newProject = articles[newIndex];
+            const newArticle = articles[newIndex];
             try {
-                const response = await fetch(`../${newProject}/description.txt`);
+                const response = await fetch(`../${newArticle}/description.txt`);
                 const text = await response.text();
                 const htmlFileName = text.split('---')[4].trim(); // Extract the HTML filename from the description.txt
-                window.location.href = `../${newProject}/${htmlFileName}`;
+                window.location.href = `../${newArticle}/${htmlFileName}`;
             } catch (error) {
-                console.error('Error loading next project description:', error);
+                console.error('Error loading next article description:', error);
             }
         }
     };
@@ -386,8 +386,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the app
     const init = async () => {
         articles = await fetchArticles();
-        document.getElementById('prev-project').addEventListener('click', () => navigateArticles(-1));
-        document.getElementById('next-project').addEventListener('click', () => navigateArticles(1));
+        document.getElementById('prev-article').addEventListener('click', () => navigateArticles(-1));
+        document.getElementById('next-article').addEventListener('click', () => navigateArticles(1));
         await fetchDescription();
         await loadMedia();
         await fetchStats(); // Fetch and display the stats
