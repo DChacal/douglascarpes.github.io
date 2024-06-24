@@ -1,0 +1,10 @@
+Coffee Machine - Cafeteira Oster Flavor Programável
+---
+Coffee machine based on "Cafeteira Oster Flavor Programável"
+Modeling, lookdev, render and post production made by me entirely with Blender. Some textures and masks were made in Photoshop. Coffee falling animation made with Geometry nodes.
+---
+Blender, Photoshop
+---
+https://cdnb.artstation.com/p/assets/images/images/053/870/703/large/douglas-carpes-1.jpg?1663214509
+---
+coffeemachineoster.html
