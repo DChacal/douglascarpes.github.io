@@ -1,2 +1,3 @@
-Example Project
-BigMegaGunExample
+Coffee Machine - Cafeteira Oster Flavor Programável
+Coffee Machine - Cafeteira Oster Flavor Programável
+Example Project - Copia
