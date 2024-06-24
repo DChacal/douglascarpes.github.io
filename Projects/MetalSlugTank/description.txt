@@ -1,0 +1,12 @@
+Metal Slug Tank (Fan art)
+---
+Tank SV - 001
+Fanart from the METAL SLUG Games series
+Modeled in Blender
+Texturized in Substance Painter
+---
+Blender, Substance Painter, Photoshop
+---
+thumbnail url (gets injected into your landing page) 
+---
+metalslugtank.html
