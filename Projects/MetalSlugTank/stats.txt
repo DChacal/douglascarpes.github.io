@@ -1,12 +1,12 @@
-Triangles: 
+Triangles: 2,655,568
 
-Materials: 
+Materials: 8
 
-Texture Size: 
+Texture Size: 4096
 
-Texel Density: 
+Texel Density: 10.24
 
-Workflow: 
+Workflow: PBR - Metal/Rough
 
 Target Engine: 
 
