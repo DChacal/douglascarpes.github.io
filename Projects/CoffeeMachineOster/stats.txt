@@ -1,10 +1,10 @@
-Triangles: 
+Triangles: 817,080
 
-Materials: 
+Materials: 18
 
-Texture Size: 
+Texture Size: 2048
 
-Texel Density: 
+Texel Density: 10.24
 
 Workflow: 
 

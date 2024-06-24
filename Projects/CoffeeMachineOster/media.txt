@@ -1,17 +1,15 @@
-https://example1.png
-Descriptions go under each image like this! png/jpeg/jpg/gif supported.
+https://cdnb.artstation.com/p/assets/images/images/053/870/703/large/douglas-carpes-1.jpg?1663214509
 
-https://example2.jpg
-Description for example2.jpg.
+https://cdna.artstation.com/p/assets/images/images/053/870/720/large/douglas-carpes-3.jpg?1696117614
 
-https://example3.gif
-These aren't real images but need replacing with your own.
+https://cdnb.artstation.com/p/assets/images/images/053/870/733/large/douglas-carpes-4.jpg?1663214617
 
-https://examplevideo.mp4
-MP4's are also supported but like with images should be hosted somewhere like dropbox.
+https://cdna.artstation.com/p/assets/images/images/053/870/746/large/douglas-carpes-5.jpg?1663214657
 
-https://beforepic.png // https://afterpic.png
-You can create before and after slider by seperating two urls with ' // ' 
+https://cdna.artstation.com/p/assets/images/images/053/870/762/large/douglas-carpes-6.jpg?1663214696
 
-https://sketchfabexample.com 
-you can also embed sketchfab files by pasting the url, no need for direct embedd urls. 
+https://cdnb.artstation.com/p/assets/images/images/053/870/765/large/douglas-carpes-7.jpg?1663214719
+
+https://cdna.artstation.com/p/assets/images/images/053/870/768/large/douglas-carpes-8.jpg?1663214738
+
+https://cdn.artstation.com/p/video_sources/000/954/173/cafeteira-360.mp4
