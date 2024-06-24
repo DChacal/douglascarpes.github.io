@@ -7,6 +7,6 @@ Texturized in Substance Painter
 ---
 Blender, Substance Painter, Photoshop
 ---
-thumbnail url (gets injected into your landing page) 
+https://cdna.artstation.com/p/assets/covers/images/054/742/860/smaller_square/douglas-carpes-douglas-carpes-capa-sem-logo.jpg?1665260068
 ---
 metalslugtank.html
