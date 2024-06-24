@@ -4,6 +4,6 @@ Project Description
 ---
 Software Tags - separated by commas (marmoset toolbag, unity, UE5, Blender, 3ds Max)
 ---
-thumbnail url (gets injected into your landing page) 
+https://cdnb.artstation.com/p/assets/images/images/053/870/703/large/douglas-carpes-1.jpg?1663214509 
 ---
 name of project html ("xyz.html" for example - make sure you rename the template html)
